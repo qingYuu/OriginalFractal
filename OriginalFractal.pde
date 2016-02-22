@@ -1,7 +1,8 @@
 
 public void setup() {
+  size(300,300,P3D);
 	background(19, 179, 214);
-	size(300,300,P3D);
+	
 
 }
 
@@ -16,8 +17,9 @@ fractal(150,150,150,100,100,100);
 
 
 public void fractal(int x,int y,int z,int wid,int len, int r)
-{  color c = color(245, 84, 63);
+{  color c = color(225, 225, 225);
    //noStroke();
+   noFill();
    stroke(c);
    if(len<=70)
    {
