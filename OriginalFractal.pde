@@ -23,11 +23,13 @@ public void fractal(int x,int y,int z,int wid,int len, int r)
    {
    	   
    	    translate(x,y,z);
-		rotateX(0.3);
-		rotateY(0.3); 
+		// rotateX(0.3);
+		// rotateY(0.3);
+    rotateZ(0.3); 
 		sphere(r);
-		rotateY(-0.3);
-		rotateX(-0.3);
+		// rotateY(-0.3);
+		// rotateX(-0.3);
+    rotateZ(-0.3);
 		translate(-x,-y,-z);
 
    }
