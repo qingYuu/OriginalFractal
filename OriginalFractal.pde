@@ -10,7 +10,7 @@ public void setup() {
 void draw() 
 {
 
-fractal(150,150,150,90,90,30);
+fractal(150,150,150,100,100,100);
 	
 }
 
@@ -23,11 +23,11 @@ public void fractal(int x,int y,int z,int wid,int len, int r)
    {
    	   
    	    translate(x,y,z);
-		rotateX(mouseX*0.3);
-		rotateY(mouseY*0.3); 
+		rotateX(0.3);
+		rotateY(0.3); 
 		sphere(r);
-		rotateY(mouseX*-0.3);
-		rotateX(mouseY*-0.3);
+		rotateY(-0.3);
+		rotateX(-0.3);
 		translate(-x,-y,-z);
 
    }
